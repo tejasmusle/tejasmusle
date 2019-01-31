@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:layout_gravity="center"
+    android:background="#FF5722"
+    android:orientation="vertical"
+    >
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="8"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="25dp"
+                android:text="SIGN UP"
+                android:textColor="#FF5722"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+                android:id="@+id/nam"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:hint="Name"
+                android:background="@drawable/signup"/>
+
+
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:hint="DD/MM/YY"
+                android:background="@drawable/signup"/>
+
+
+            <EditText
+                android:id="@+id/ph"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:hint="phonenumber"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:background="@drawable/signup"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="300dp"
+                android:layout_marginTop="6dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="example@example.com"
+                android:inputType="textEmailAddress"
+                android:layout_weight="1"
+                android:background="@drawable/signup"/>
+
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="********"
+                android:inputType="textPassword"
+                android:layout_weight="1"
+                android:background="@drawable/signup"
+                />
+
+            <EditText
+                android:id="@+id/re_pass"
+                android:layout_width="300dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:layout_gravity="center_horizontal"
+                android:hint="Re-type Password"
+                android:inputType="textPassword"
+                android:layout_weight="1"
+                android:background="@drawable/signup"/>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/button"
+                android:text="Confirm"
+                android:textColor="#ECE6E4"
+
+                />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_column="2"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="9dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/backbutton"
+                android:text="Back"
+                android:textColor="#FF5722"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
